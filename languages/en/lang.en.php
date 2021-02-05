@@ -33,6 +33,16 @@
   $lang['view_customer']      = 'View Customer';
   $lang['edit_customer']      = 'Edit Customer';
   $lang['delete_customer']      = 'Delete Customer';
+  $lang['first_name']      = 'First Name';
+  $lang['last_name']      = 'Last Name';
+  $lang['main_phone']      = 'Main Phone';
+  $lang['mobile_phone']      = 'Mobile Phone';
+  $lang['home_phone']      = 'Home Phone';
+  $lang['email']      = 'Email';
+  $lang['contact_type']      = 'Contact Type';
+  $lang['client_source_by_date']      = 'Client Source By Date';
+  $lang['new_clients_by_date']      = 'New Clients by Date';
+  $lang['new_tickets_by_date']      = 'New Tickets by Date';
      
   // ETC
 ?>

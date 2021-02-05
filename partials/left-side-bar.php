@@ -64,13 +64,37 @@
             </a>
         </li>
 
-        <li class="nav-item">
-            <a class="nav-link" href="clients-direct.php">
+
+
+        <li class="nav-item d-none d-md-block">
+            <a class="nav-link" data-toggle="collapse" href="#page-layouts-2" aria-expanded="false"
+                aria-controls="page-layouts-2">
                 <i class="menu-icon fa fa-paperclip"></i>
                 <span class="menu-title"><?php echo $lang['reports']; ?></span>
-
             </a>
+            <div class="collapse" id="page-layouts-2">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="active-tickets.php"><?php echo $lang['active_tickets']; ?></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="client-source-by-date.php"><?php echo $lang['client_source_by_date']; ?></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="new-clients-by-date.php"><?php echo $lang['new_clients_by_date']; ?></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="new-tickets-by-date.php"><?php echo $lang['new_tickets_by_date']; ?></a>
+                    </li>
+
+
+                </ul>
+            </div>
         </li>
+
+
+
+        
 
         <li class="nav-item">
             <a class="nav-link" href="clients-direct.php">
