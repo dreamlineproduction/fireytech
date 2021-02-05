@@ -1,0 +1,123 @@
+/*------------------------------------------------------------------
+ [Master Stylesheet]
+
+  Project:	Fireytech CRM
+  Developer : Dream Line Production
+  Author : Ayan Mukhopadhyay
+  Version:	1.0.0
+-------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------
+
+
+/* === SCSS Compass Functions === */
+
+.sidebar .nav .nav-item .nav-link .menu-title {
+    color: inherit;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 1;
+    vertical-align: middle;
+    font-weight: 400;
+}
+
+.sidebar {
+    min-height: calc(100vh - 63px);
+    background: #1f1f1f;
+    font-family: 'Cabin', sans-serif;
+    padding: 0;
+    width: 255px;
+    z-index: 11;
+    transition: width 0.25s ease, background 0.25s ease;
+    -webkit-transition: width 0.25s ease, background 0.25s ease;
+    -moz-transition: width 0.25s ease, background 0.25s ease;
+    -ms-transition: width 0.25s ease, background 0.25s ease;
+}
+
+.sidebar .nav.sub-menu .nav-item .nav-link {
+    color: #ffffff;
+    padding: 0.75rem 1rem;
+    font-size: 15px;
+    line-height: 1;
+    height: auto;
+    margin-left: 12px;
+}
+
+.sidebar .nav .nav-item .collapse.show,
+.sidebar .nav .nav-item .collapsing {
+    background: #000000;
+}
+
+.table td,
+.jsgrid .jsgrid-table td,
+.table th,
+.jsgrid .jsgrid-table th {
+    vertical-align: middle;
+    font-size: 15px;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+    width: 100%;
+    display: inline-block;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    margin: 10px 0px 10px 1px;
+}
+
+.navbar.default-layout .navbar-brand-wrapper {
+    transition: width 0.25s ease, background 0.25s ease;
+    -webkit-transition: width 0.25s ease, background 0.25s ease;
+    -moz-transition: width 0.25s ease, background 0.25s ease;
+    -ms-transition: width 0.25s ease, background 0.25s ease;
+    background: #e4e4e4;
+    width: 255px;
+    height: 63px;
+}
+
+.navbar.default-layout .navbar-brand-wrapper .navbar-brand img {
+    max-width: 100%;
+    height: 48px;
+    margin: auto;
+    vertical-align: middle;
+    width: inherit;
+}
+
+.sidebar .nav:not(.sub-menu)>.nav-item:hover:not(.nav-profile)>.nav-link {
+    background: #d45403;
+    color: #ffffff;
+}
+
+.sidebar .nav .nav-item .nav-link[aria-expanded="true"] {
+    background: #3e3e3e;
+}
+
+.sidebar .nav .nav-item .nav-link {
+    align-items: center;
+    display: flex;
+    padding: 16px 35px;
+    white-space: nowrap;
+    height: 52px;
+    color: #ffffff;
+}
+
+.sidebar .nav .nav-item .nav-link .menu-icon {
+    margin-right: 1.25rem;
+    width: 16px;
+    line-height: 1;
+    font-size: 18px;
+    color: #ffffff;
+}
