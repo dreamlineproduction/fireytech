@@ -43,6 +43,22 @@
   $lang['client_source_by_date']      = 'Client Source By Date';
   $lang['new_clients_by_date']      = 'New Clients by Date';
   $lang['new_tickets_by_date']      = 'New Tickets by Date';
+  $lang['address_1']      = 'Address 1';
+  $lang['address_2']      = 'Address 2';
+  $lang['city']      = 'City';
+  $lang['state']      = 'State';
+  $lang['zip']      = 'Zip';
+  $lang['ticket_number']      = 'Ticket Number';
+  $lang['task_problem']      = 'Task / Problem';
+  $lang['ticket_status']      = 'Ticket Status';
+  $lang['repaire_status']      = 'Repaire Status';
+  $lang['billing_status']      = 'Billing Status';
+  $lang['shop_code']      = 'Onsite or Shop Code';
+  $lang['ticket_sub_status']      = 'Ticket Sub Status';
+  $lang['resource_type']      = 'Resource Type';
+  $lang['resource_sub_type']      = 'Resource Sub Type';
+  $lang['status']      = 'Status';
+  $lang['stucture']      = 'Stucture';
      
   // ETC
 ?>

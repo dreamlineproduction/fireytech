@@ -41,7 +41,7 @@
                 <div class="content-wrapper">
                     <div class="row mb-4">
                         <div class="col-12 d-flex align-items-center justify-content-between">
-                            <h4 class="page-title">Address</h4>
+                            <h4 class="page-title"><?php echo $lang['addresses']; ?></h4>
                             <div class="d-flex align-items-center">
                                 <button type="button"
                                     class="btn btn-primary btn-fw"><?php echo $lang['create_new_customer']; ?></button>
@@ -64,11 +64,11 @@
                                                                 <th><?php echo $lang['company_name']; ?></th>
                                                                 <th><?php echo $lang['first_name']; ?></th>
                                                                 <th><?php echo $lang['last_name']; ?></th>
-                                                                <th>Address 1</th>
-                                                                <th>Address 2</th>
-                                                                <th>City</th>
-                                                                <th>State</th>
-                                                                <th>Zip</th>
+                                                                <th><?php echo $lang['address_1']; ?></th>
+                                                                <th><?php echo $lang['address_2']; ?></th>
+                                                                <th><?php echo $lang['city']; ?></th>
+                                                                <th><?php echo $lang['state']; ?></th>
+                                                                <th><?php echo $lang['zip']; ?></th>
                                                                 <th><?php echo $lang['contact_type']; ?></th>
 
                                                                 <th><?php echo $lang['actions']; ?></th>

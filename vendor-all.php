@@ -41,7 +41,7 @@
                 <div class="content-wrapper">
                     <div class="row mb-4">
                         <div class="col-12 d-flex align-items-center justify-content-between">
-                            <h4 class="page-title">Resources</h4>
+                            <h4 class="page-title"><?php echo $lang['vendor_all']; ?></h4>
                             <div class="d-flex align-items-center">
                                 <button type="button"
                                     class="btn btn-primary btn-fw"><?php echo $lang['create_new_customer']; ?></button>
@@ -62,10 +62,10 @@
                                                             <tr>
                                                                 <th>#</th>
                                                                 <th><?php echo $lang['company_name']; ?></th>
-                                                                <th>Resource Type</th>
-                                                                <th>Resource Sub Type</th>
-                                                                <th>Status</th>
-                                                                <th>Structure</th>
+                                                                <th><?php echo $lang['resource_type']; ?></th>
+                                                                <th><?php echo $lang['resource_sub_type']; ?></th>
+                                                                <th><?php echo $lang['status']; ?></th>
+                                                                <th><?php echo $lang['stucture']; ?></th>
                                                                 <th><?php echo $lang['date_added']; ?></th>
                                                                 <th><?php echo $lang['date_last_edited']; ?></th>
                                                                 

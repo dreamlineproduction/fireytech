@@ -41,7 +41,7 @@
                 <div class="content-wrapper">
                     <div class="row mb-4">
                         <div class="col-12 d-flex align-items-center justify-content-between">
-                            <h4 class="page-title">Tickets</h4>
+                            <h4 class="page-title"><?php echo $lang['tickets']; ?></h4>
                             <div class="d-flex align-items-center">
                                 <button type="button"
                                     class="btn btn-primary btn-fw"><?php echo $lang['create_new_customer']; ?></button>
@@ -61,16 +61,15 @@
                                                         <thead>
                                                             <tr>
                                                                 <th>#</th>
-                                                                <th>Ticket Number</th>
-                                                                <th>Task / Problem</th>
-                                                                <th>Ticket Status</th>
-                                                                <th>Repair Status</th>
-                                                                <th>Billing Status</th>
-                                                                <th>Onsite or Shop Code</th>
-                                                                <th>Follow-up By</th>
-                                                                <th>Ticket Sub Status</th>
-                                                                <th>Date Added</th>
-                                                                <th>Date Last Edited</th>
+                                                                <th><?php echo $lang['ticket_number']; ?></th>
+                                                                <th><?php echo $lang['task_problem']; ?></th>
+                                                                <th><?php echo $lang['ticket_status']; ?></th>
+                                                                <th><?php echo $lang['repaire_status']; ?></th>
+                                                                <th><?php echo $lang['billing_status']; ?></th>
+                                                                <th><?php echo $lang['shop_code']; ?></th>
+                                                                <th><?php echo $lang['ticket_sub_status']; ?></th>
+                                                                <th><?php echo $lang['date_added']; ?></th>
+                                                                <th><?php echo $lang['date_last_edited']; ?></th>
 
                                                                 <th><?php echo $lang['actions']; ?></th>
                                                             </tr>
@@ -79,7 +78,6 @@
 
                                                             <tr>
                                                                 <td>1</td>
-                                                                <td>****</td>
                                                                 <td>****</td>
                                                                 <td>****</td>
                                                                 <td>****</td>
