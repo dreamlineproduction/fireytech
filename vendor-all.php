@@ -61,6 +61,7 @@
                                                         <thead>
                                                             <tr>
                                                                 <th>#</th>
+                                                                <th><?php echo $lang['actions']; ?></th>
                                                                 <th><?php echo $lang['company_name']; ?></th>
                                                                 <th><?php echo $lang['resource_type']; ?></th>
                                                                 <th><?php echo $lang['resource_sub_type']; ?></th>
@@ -70,22 +71,13 @@
                                                                 <th><?php echo $lang['date_last_edited']; ?></th>
                                                                 
 
-                                                                <th><?php echo $lang['actions']; ?></th>
+                                                                
                                                             </tr>
                                                         </thead>
                                                         <tbody>
 
                                                             <tr>
                                                                 <td>1</td>
-                                                                <td>****</td>
-                                                                <td>****</td>
-                                                                <td>****</td>
-                                                                <td>****</td>
-                                                                <td>****</td>
-                                                                <td>****</td>
-                                                                <td>****</td>
-                                                               
-
                                                                 <td>
                                                                     <div class="dropdown">
                                                                         <button type="button"
@@ -108,6 +100,16 @@
                                                                         </div>
                                                                     </div>
                                                                 </td>
+                                                                <td>****</td>
+                                                                <td>****</td>
+                                                                <td>****</td>
+                                                                <td>****</td>
+                                                                <td>****</td>
+                                                                <td>****</td>
+                                                                <td>****</td>
+                                                               
+
+                                                               
                                                             </tr>
                                                         </tbody>
                                                     </table>

@@ -43,8 +43,8 @@
                         <div class="col-12 d-flex align-items-center justify-content-between">
                             <h4 class="page-title"><?php echo $lang['customer']; ?></h4>
                             <div class="d-flex align-items-center">
-                                <button type="button"
-                                    class="btn btn-primary btn-fw"><?php echo $lang['create_new_customer']; ?></button>
+                            <a class="btn btn-primary btn-fw" href="add-new-customer.php" role="button"><?php echo $lang['create_new_customer']; ?></a>
+                             
                             </div>
                         </div>
                     </div>
@@ -61,25 +61,20 @@
                                                         <thead>
                                                             <tr>
                                                                 <th>#</th>
+                                                                <th><?php echo $lang['actions']; ?></th>
                                                                 <th><?php echo $lang['company_name']; ?></th>
                                                                 <th><?php echo $lang['date_added']; ?></th>
                                                                 <th><?php echo $lang['date_last_edited']; ?></th>
                                                                 <th><?php echo $lang['client_type']; ?></th>
                                                                 <th><?php echo $lang['client_sub_type']; ?></th>
 
-                                                                <th><?php echo $lang['actions']; ?></th>
+                                                               
                                                             </tr>
                                                         </thead>
                                                         <tbody>
 
                                                             <tr>
                                                                 <td>1</td>
-                                                                <td>Dream Line Production</td>
-                                                                <td>01-02-2021</td>
-                                                                <td>05-02-2021</td>
-                                                                <td>Individual</td>
-                                                                <td>CUSTOMER SERVICE</td>
-
                                                                 <td>
                                                                     <div class="dropdown">
                                                                         <button type="button"
@@ -102,6 +97,13 @@
                                                                         </div>
                                                                     </div>
                                                                 </td>
+                                                                <td>Dream Line Production</td>
+                                                                <td>01-02-2021</td>
+                                                                <td>05-02-2021</td>
+                                                                <td>Individual</td>
+                                                                <td>CUSTOMER SERVICE</td>
+
+                                                              
                                                             </tr>
                                                         </tbody>
                                                     </table>

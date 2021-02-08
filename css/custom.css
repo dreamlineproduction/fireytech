@@ -7,117 +7,161 @@
   Version:	1.0.0
 -------------------------------------------------------------------*/
 
-
 /*-------------------------------------------------------------------
 
 
 /* === SCSS Compass Functions === */
 
+.form-control,
+.asColorPicker-input,
+.dataTables_wrapper select,
+.jsgrid .jsgrid-table .jsgrid-filter-row input[type="text"],
+.jsgrid .jsgrid-table .jsgrid-filter-row select,
+.jsgrid .jsgrid-table .jsgrid-filter-row input[type="number"],
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--single .select2-search__field,
+.tt-hint,
+.tt-query,
+.typeahead {
+  border: 1px solid #f2f2f2;
+  font-family: "Cabin", sans-serif;
+  font-size: 14px;
+  padding: 0.56rem 0.75rem;
+  line-height: 14px;
+  font-weight: 300;
+}
+
 .sidebar .nav .nav-item .nav-link .menu-title {
-    color: inherit;
-    display: inline-block;
-    font-size: 15px;
-    line-height: 1;
-    vertical-align: middle;
-    font-weight: 400;
+  color: inherit;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 1;
+  vertical-align: middle;
+  font-weight: 400;
+}
+
+.nav-pills .nav-item .nav-link,
+.nav-tabs .nav-item .nav-link {
+  font-family: "Cabin", sans-serif;
+  line-height: 1;
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  display: -webkit-flex;
+  display: flex;
+  background: #e4e4e4;
+  margin-right: 10px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #ffe !important;
+  background-color: #1f1f1f;
+  background: #1f1f1f !important;
+}
+
+.form-group label {
+  font-size: 16px;
+  line-height: 1;
+  vertical-align: top;
 }
 
 .sidebar {
-    min-height: calc(100vh - 63px);
-    background: #1f1f1f;
-    font-family: 'Cabin', sans-serif;
-    padding: 0;
-    width: 255px;
-    z-index: 11;
-    transition: width 0.25s ease, background 0.25s ease;
-    -webkit-transition: width 0.25s ease, background 0.25s ease;
-    -moz-transition: width 0.25s ease, background 0.25s ease;
-    -ms-transition: width 0.25s ease, background 0.25s ease;
+  min-height: calc(100vh - 63px);
+  background: #1f1f1f;
+  font-family: "Cabin", sans-serif;
+  padding: 0;
+  width: 255px;
+  z-index: 11;
+  transition: width 0.25s ease, background 0.25s ease;
+  -webkit-transition: width 0.25s ease, background 0.25s ease;
+  -moz-transition: width 0.25s ease, background 0.25s ease;
+  -ms-transition: width 0.25s ease, background 0.25s ease;
 }
 
 .sidebar .nav.sub-menu .nav-item .nav-link {
-    color: #ffffff;
-    padding: 0.75rem 1rem;
-    font-size: 15px;
-    line-height: 1;
-    height: auto;
-    margin-left: 12px;
+  color: #ffffff;
+  padding: 0.75rem 1rem;
+  font-size: 15px;
+  line-height: 1;
+  height: auto;
+  margin-left: 12px;
 }
 
 .sidebar .nav .nav-item .collapse.show,
 .sidebar .nav .nav-item .collapsing {
-    background: #000000;
+  background: #000000;
 }
 
 .table td,
 .jsgrid .jsgrid-table td,
 .table th,
 .jsgrid .jsgrid-table th {
-    vertical-align: middle;
-    font-size: 15px;
-    line-height: 1;
-    white-space: nowrap;
+  vertical-align: middle;
+  font-size: 15px;
+  line-height: 1;
+  white-space: nowrap;
 }
 
 div.dataTables_wrapper div.dataTables_length select {
-    width: 100%;
-    display: inline-block;
+  width: 100%;
+  display: inline-block;
 }
 
 .dropdown-item {
-    display: block;
-    width: 100%;
-    padding: 0.25rem 1.5rem;
-    clear: both;
-    font-weight: 400;
-    color: #212529;
-    text-align: inherit;
-    white-space: nowrap;
-    background-color: transparent;
-    border: 0;
-    margin: 10px 0px 10px 1px;
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  margin: 10px 0px 10px 1px;
 }
 
 .navbar.default-layout .navbar-brand-wrapper {
-    transition: width 0.25s ease, background 0.25s ease;
-    -webkit-transition: width 0.25s ease, background 0.25s ease;
-    -moz-transition: width 0.25s ease, background 0.25s ease;
-    -ms-transition: width 0.25s ease, background 0.25s ease;
-    background: #e4e4e4;
-    width: 255px;
-    height: 63px;
+  transition: width 0.25s ease, background 0.25s ease;
+  -webkit-transition: width 0.25s ease, background 0.25s ease;
+  -moz-transition: width 0.25s ease, background 0.25s ease;
+  -ms-transition: width 0.25s ease, background 0.25s ease;
+  background: #e4e4e4;
+  width: 255px;
+  height: 63px;
 }
 
 .navbar.default-layout .navbar-brand-wrapper .navbar-brand img {
-    max-width: 100%;
-    height: 48px;
-    margin: auto;
-    vertical-align: middle;
-    width: inherit;
+  max-width: 100%;
+  height: 48px;
+  margin: auto;
+  vertical-align: middle;
+  width: inherit;
 }
 
-.sidebar .nav:not(.sub-menu)>.nav-item:hover:not(.nav-profile)>.nav-link {
-    background: #d45403;
-    color: #ffffff;
+.sidebar .nav:not(.sub-menu) > .nav-item:hover:not(.nav-profile) > .nav-link {
+  background: #d45403;
+  color: #ffffff;
 }
 
 .sidebar .nav .nav-item .nav-link[aria-expanded="true"] {
-    background: #3e3e3e;
+  background: #3e3e3e;
 }
 
 .sidebar .nav .nav-item .nav-link {
-    align-items: center;
-    display: flex;
-    padding: 16px 35px;
-    white-space: nowrap;
-    height: 52px;
-    color: #ffffff;
+  align-items: center;
+  display: flex;
+  padding: 16px 35px;
+  white-space: nowrap;
+  height: 52px;
+  color: #ffffff;
 }
 
 .sidebar .nav .nav-item .nav-link .menu-icon {
-    margin-right: 1.25rem;
-    width: 16px;
-    line-height: 1;
-    font-size: 18px;
-    color: #ffffff;
+  margin-right: 1.25rem;
+  width: 16px;
+  line-height: 1;
+  font-size: 18px;
+  color: #ffffff;
 }

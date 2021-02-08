@@ -61,6 +61,7 @@
                                                         <thead>
                                                             <tr>
                                                                 <th>#</th>
+                                                                <th><?php echo $lang['actions']; ?></th>
                                                                 <th><?php echo $lang['company_name']; ?></th>
                                                                 <th><?php echo $lang['first_name']; ?></th>
                                                                 <th><?php echo $lang['last_name']; ?></th>
@@ -71,23 +72,13 @@
                                                                 <th><?php echo $lang['zip']; ?></th>
                                                                 <th><?php echo $lang['contact_type']; ?></th>
 
-                                                                <th><?php echo $lang['actions']; ?></th>
+                                                                
                                                             </tr>
                                                         </thead>
                                                         <tbody>
 
                                                             <tr>
                                                                 <td>1</td>
-                                                                <td>Dream Line Production</td>
-                                                                <td>Ayan</td>
-                                                                <td>Mukhopadhyay</td>
-                                                                <td>Address 1</td>
-                                                                <td>Address 2</td>
-                                                                <td>City</td>
-                                                                <td>State</td>
-                                                                <td>Zip</td>
-                                                                <td>Client</td>
-
                                                                 <td>
                                                                     <div class="dropdown">
                                                                         <button type="button"
@@ -110,6 +101,17 @@
                                                                         </div>
                                                                     </div>
                                                                 </td>
+                                                                <td>Dream Line Production</td>
+                                                                <td>Ayan</td>
+                                                                <td>Mukhopadhyay</td>
+                                                                <td>Address 1</td>
+                                                                <td>Address 2</td>
+                                                                <td>City</td>
+                                                                <td>State</td>
+                                                                <td>Zip</td>
+                                                                <td>Client</td>
+
+                                                             
                                                             </tr>
                                                         </tbody>
                                                     </table>

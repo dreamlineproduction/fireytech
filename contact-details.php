@@ -61,6 +61,7 @@
                                                         <thead>
                                                             <tr>
                                                                 <th>#</th>
+                                                                <th><?php echo $lang['actions']; ?></th>
                                                                 <th><?php echo $lang['company_name']; ?></th>
                                                                 <th><?php echo $lang['first_name']; ?></th>
                                                                 <th><?php echo $lang['last_name']; ?></th>
@@ -70,22 +71,13 @@
                                                                 <th><?php echo $lang['email']; ?></th>
                                                                 <th><?php echo $lang['contact_type']; ?></th>
 
-                                                                <th><?php echo $lang['actions']; ?></th>
+                                                                
                                                             </tr>
                                                         </thead>
                                                         <tbody>
 
                                                             <tr>
                                                                 <td>1</td>
-                                                                <td>Dream Line Production</td>
-                                                                <td>Ayan</td>
-                                                                <td>Mukhopadhyay</td>
-                                                                <td>1234567890</td>
-                                                                <td>12345678920</td>
-                                                                <td>12345678920</td>
-                                                                <td>info@demo.com</td>
-                                                                <td>Client</td>
-
                                                                 <td>
                                                                     <div class="dropdown">
                                                                         <button type="button"
@@ -108,6 +100,16 @@
                                                                         </div>
                                                                     </div>
                                                                 </td>
+                                                                <td>Dream Line Production</td>
+                                                                <td>Ayan</td>
+                                                                <td>Mukhopadhyay</td>
+                                                                <td>1234567890</td>
+                                                                <td>12345678920</td>
+                                                                <td>12345678920</td>
+                                                                <td>info@demo.com</td>
+                                                                <td>Client</td>
+
+                                                              
                                                             </tr>
                                                         </tbody>
                                                     </table>

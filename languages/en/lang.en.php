@@ -5,8 +5,9 @@
   $lang['welcome']      = 'Welcome';
   $lang['dashboard']      = 'Dashboard';
   $lang['fireytech_home']      = 'Fireytech Home';
-  $lang['customer']      = 'Customer';
+  $lang['customer']      = 'Customers';
   $lang['create_new_customer']      = 'Create new customer';
+  $lang['back_to_list']      = 'Back to list';
   $lang['contact_details']      = 'Contact Details';
   $lang['addresses']      = 'Addresses';
   $lang['contacts']      = 'Contacts';

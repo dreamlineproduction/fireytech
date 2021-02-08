@@ -61,6 +61,7 @@
                                                         <thead>
                                                             <tr>
                                                                 <th>#</th>
+                                                                <th><?php echo $lang['actions']; ?></th>
                                                                 <th><?php echo $lang['ticket_number']; ?></th>
                                                                 <th><?php echo $lang['task_problem']; ?></th>
                                                                 <th><?php echo $lang['ticket_status']; ?></th>
@@ -71,23 +72,13 @@
                                                                 <th><?php echo $lang['date_added']; ?></th>
                                                                 <th><?php echo $lang['date_last_edited']; ?></th>
 
-                                                                <th><?php echo $lang['actions']; ?></th>
+                                                                
                                                             </tr>
                                                         </thead>
                                                         <tbody>
 
                                                             <tr>
                                                                 <td>1</td>
-                                                                <td>****</td>
-                                                                <td>****</td>
-                                                                <td>****</td>
-                                                                <td>****</td>
-                                                                <td>****</td>
-                                                                <td>****</td>
-                                                                <td>****</td>
-                                                                <td>****</td>
-                                                                <td>****</td>
-
                                                                 <td>
                                                                     <div class="dropdown">
                                                                         <button type="button"
@@ -110,6 +101,17 @@
                                                                         </div>
                                                                     </div>
                                                                 </td>
+                                                                <td>****</td>
+                                                                <td>****</td>
+                                                                <td>****</td>
+                                                                <td>****</td>
+                                                                <td>****</td>
+                                                                <td>****</td>
+                                                                <td>****</td>
+                                                                <td>****</td>
+                                                                <td>****</td>
+
+                                                              
                                                             </tr>
                                                         </tbody>
                                                     </table>
