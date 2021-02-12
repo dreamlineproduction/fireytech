@@ -125,15 +125,33 @@
                       
                     </div>
                   <div class="form-group">
-                      <label for="exampleInputName1">Home</label>
+                      <label for="exampleInputName1">Home Phone</label>
                       
                       <input type="text" class="form-control" id="exampleInputName1" placeholder="Home Address">
                       
                     </div>
                   <div class="form-group">
-                      <label for="exampleInputName1">Mobile</label>
+                      <label for="exampleInputName1">Mobile Phone</label>
                       
                       <input type="text" class="form-control" id="exampleInputName1" placeholder="Mobile">
+                      
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputName1">Company Phone</label>
+                      
+                      <input type="text" class="form-control" id="exampleInputName1" placeholder="Company Phone">
+                      
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputName1">Fax</label>
+                      
+                      <input type="text" class="form-control" id="exampleInputName1" placeholder="Fax">
+                      
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputName1">Ext</label>
+                      
+                      <input type="text" class="form-control" id="exampleInputName1" placeholder="Ext">
                       
                     </div>
                   <div class="form-group">
@@ -142,40 +160,42 @@
                       <input type="email" class="form-control" id="exampleInputName1" placeholder="Email Address">
                       
                     </div>
-                  <div class="form-group">
-                      <label for="exampleInputName1">Company Phone</label>
-                      
-                      <input type="email" class="form-control" id="exampleInputName1" placeholder="Company Phone">
-                      
-                    </div>
-                  <div class="form-group">
-                      <label for="exampleInputName1">Ext</label>
-                      
-                      <input type="email" class="form-control" id="exampleInputName1" placeholder="Ext">
-                      
-                    </div>
-                  <div class="form-group">
-                      <label for="exampleInputName1">Department</label>
-                      
-                      <input type="email" class="form-control" id="exampleInputName1" placeholder="Department">
-                      
-                    </div>
+                 
+                 
+                    <div class="form-group">
+                    <label for="exampleInputName1">Department</label> 
+                    <a href="#" class="add-new-depart" data-toggle="modal" data-target="#add-new-department">+ Create New</a>
+                    <select class="form-control form-control-lg" id="exampleFormControlSelect1">
+                      <option selected disabled>Select department from list</option>
+                      <option>ACCOUNTING</option>
+                      <option>ADMINISTRATION</option>
+                      <option>CHECK IN/OUT</option>
+                      <option>CLOSEOUT</option>
+                      <option>CUSTOMER SERVICE</option>
+                      <option>DEPOT</option>
+                      <option>DISPATCH</option>
+                      <option>INVOICING</option>
+                      <option>MAIN</option>
+                      <option>MANAGEMENT</option>
+                      <option>PARTS</option>
+                      <option>SALES</option>
+                      <option>SITE CONTACT</option>
+                      <option>TECH SUPPORT</option>
+                      <option>TECHNICAL REFERENCE</option>
+                      <option>TRAINING</option>
+                    </select>
+                  </div>
                   <div class="form-group">
                       <label for="exampleInputName1">Title</label>
                       
-                      <input type="email" class="form-control" id="exampleInputName1" placeholder="Title">
+                      <input type="text" class="form-control" id="exampleInputName1" placeholder="Title">
                       
                     </div>
-                  <div class="form-group">
-                      <label for="exampleInputName1">Fax</label>
-                      
-                      <input type="email" class="form-control" id="exampleInputName1" placeholder="Fax">
-                      
-                    </div>
+                 
                   <div class="form-group">
                       <label for="exampleInputName1">Note</label>
                       
-                      <input type="email" class="form-control" id="exampleInputName1" placeholder="Note">
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Note" spellcheck="false"></textarea>
                       
                     </div>
 
@@ -184,35 +204,47 @@
 
   <div class="tab-pane fade" id="pills-address" role="tabpanel">
   
+<div class="view-all-address mb-4 mt-4">
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">View All Address
+                      <i class="mdi mdi-play-circle ml-1"></i>
+                    </button>
+</div>
+
   <div class="form-group">
                       <label for="exampleInputName1">Address</label>
                       
-                      <input type="email" class="form-control" id="exampleInputName1" placeholder="Address">
+                      <input type="text" class="form-control" id="exampleInputName1" placeholder="Address">
                       
                     </div>
 
                     <div class="form-group">
                       <label for="exampleInputName1">Address 2</label>
                       
-                      <input type="email" class="form-control" id="exampleInputName1" placeholder="Address 2">
+                      <input type="text" class="form-control" id="exampleInputName1" placeholder="Address 2">
                       
                     </div>
                     <div class="form-group">
                       <label for="exampleInputName1">Zip</label>
-                      
-                      <input type="email" class="form-control" id="exampleInputName1" placeholder="Zip">
-                      
+                      <div class="w-100">
+                      <select class="js-example-basic-single">
+                          <option value="AL">Alabama</option>
+                          <option value="WY">Wyoming</option>
+                          <option value="AM">America</option>
+                          <option value="CA">Canada</option>
+                          <option value="RU">Russia</option>
+                        </select>
+                        </div>
                     </div>
                     <div class="form-group">
                       <label for="exampleInputName1">One Line</label>
                       
-                      <input type="email" class="form-control" id="exampleInputName1" placeholder="One Line">
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"  spellcheck="false" readonly>42, Adilate Street. Ny. 2558 </textarea>
                       
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputName1">Description</label>
+                      <label for="exampleInputName1">Note</label>
                       
-                      <input type="email" class="form-control" id="exampleInputName1" placeholder="Description">
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"  spellcheck="true" placeholder="Note"> </textarea>
                       
                     </div>
                     <div class="form-group">
@@ -222,23 +254,15 @@
                       
                     </div>
                     <div class="form-group">
-                      <label for="exampleInputName1">Department</label>
+                     
                       
-                      <input type="email" class="form-control" id="exampleInputName1" placeholder="Department">
-                      
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputName1">ContactSubType</label>
-                      
-                      <input type="email" class="form-control" id="exampleInputName1" placeholder="ContactSubType">
+                    
                       
                     </div>
-                    <div class="form-group">
-                      <label for="exampleInputName1">Ticket Number</label>
-                      
-                      <input type="email" class="form-control" id="exampleInputName1" placeholder="Ticket Number">
-                      
-                    </div>
+
+                  
+                    
+                
 
   
   </div>
@@ -556,6 +580,53 @@
     </div>
     <!-- container-scroller -->
 
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <p>Modal body text goes here.</p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-success">Submit</button>
+                          <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+<!-- Add new Department Modal -->
+<div class="modal fade" id="add-new-department" tabindex="-1" role="dialog" aria-labelledby="add-new-departmentLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="add-new-departmentLabel">Add new department</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+        <div class="form-group">
+                    <label>Department Name</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="Enter Department Name">
+                  </div>
+
+                  <button type="submit" class="btn btn-success mr-2">Submit</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+
+        </form>
+      </div>
+ 
+    </div>
+  </div>
+</div>
+
     <!-- plugins:js -->
     <script src="vendors/js/vendor.bundle.base.js"></script>
     <script src="vendors/js/vendor.bundle.addons.js"></script>
@@ -568,6 +639,7 @@
     <script src="js/misc.js"></script>
     <script src="js/settings.js"></script>
     <script src="js/todolist.js"></script>
+    <script src="js/select2.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page-->
     <script src="js/dashboard.js"></script>

@@ -105,6 +105,27 @@
         </li>
 
 
+        <hr>
+
+        <li class="nav-item d-none d-md-block">
+            <a class="nav-link" data-toggle="collapse" href="#tools-layout" aria-expanded="false"
+                aria-controls="tools-layout">
+                <i class="menu-icon fa fa-gear"></i>
+                <span class="menu-title">Tools</span>
+            </a>
+            <div class="collapse" id="tools-layout">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="zip-codes.php">Zip Codes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equipment.php">Equipment</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </li>
 
 
 
