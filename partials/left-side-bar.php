@@ -20,7 +20,7 @@
             </a>
         </li>
 
-        <li class="nav-item d-none d-md-block">
+        <!-- <li class="nav-item d-none d-md-block">
             <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false"
                 aria-controls="page-layouts">
                 <i class="menu-icon fa fa-address-book"></i>
@@ -38,7 +38,7 @@
 
                 </ul>
             </div>
-        </li>
+        </li> -->
 
 
 

@@ -70,18 +70,8 @@
                           <label for="county">STATE</label>
                           <?php include 'tools-data/states.php';?>
                         </div>
-                        <div class="form-group">
-                          <label for="region">REGION</label>
-                          <input type="text" class="form-control" id="region" placeholder="Enter Region">
-                        </div>
-                        <div class="form-group">
-                          <label for="lat">LATITUDE</label>
-                          <input type="number" class="form-control" id="lat" placeholder="Enter Latitude">
-                        </div>
-                        <div class="form-group">
-                          <label for="long">LONGITUDE</label>
-                          <input type="number" class="form-control" id="long" placeholder="Enter Longitude">
-                        </div>
+                      
+                      
                         <button type="submit" class="btn btn-success mr-2">Submit</button>
                         <button class="btn btn-light">Cancel</button>
                       </form>
@@ -102,9 +92,7 @@
                         <th>CITY</th>
                         <th>COUNTY</th>
                         <th>STATE</th>
-                        <th>REGION</th>
-                        <th>LATITUDE</th>
-                        <th>LONGITUDE</th>
+                        
                         <th>ACTION</th>
                       </tr>
                     </thead>
@@ -114,9 +102,7 @@
                         <td>HOLTSVILLE</td>
                         <td>SUFFOLK</td>
                         <td>NY</td>
-                        <td>SUFFOLK</td>
-                        <td>40.922326</td>
-                        <td>-72.637078</td>
+                       
                      
                         <td>
                           <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
@@ -127,9 +113,7 @@
                         <td>HOLTSVILLE</td>
                         <td>SUFFOLK</td>
                         <td>NY</td>
-                        <td>SUFFOLK</td>
-                        <td>40.922326</td>
-                        <td>-72.637078</td>
+                        
                      
                         <td>
                           <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
@@ -140,9 +124,7 @@
                         <td>HOLTSVILLE</td>
                         <td>SUFFOLK</td>
                         <td>NY</td>
-                        <td>SUFFOLK</td>
-                        <td>40.922326</td>
-                        <td>-72.637078</td>
+                       
                      
                         <td>
                           <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
@@ -153,9 +135,7 @@
                         <td>HOLTSVILLE</td>
                         <td>SUFFOLK</td>
                         <td>NY</td>
-                        <td>SUFFOLK</td>
-                        <td>40.922326</td>
-                        <td>-72.637078</td>
+                       
                      
                         <td>
                           <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
@@ -166,9 +146,7 @@
                         <td>HOLTSVILLE</td>
                         <td>SUFFOLK</td>
                         <td>NY</td>
-                        <td>SUFFOLK</td>
-                        <td>40.922326</td>
-                        <td>-72.637078</td>
+                       
                      
                         <td>
                           <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
@@ -179,9 +157,7 @@
                         <td>HOLTSVILLE</td>
                         <td>SUFFOLK</td>
                         <td>NY</td>
-                        <td>SUFFOLK</td>
-                        <td>40.922326</td>
-                        <td>-72.637078</td>
+                       
                      
                         <td>
                           <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
@@ -192,100 +168,84 @@
                         <td>HOLTSVILLE</td>
                         <td>SUFFOLK</td>
                         <td>NY</td>
-                        <td>SUFFOLK</td>
-                        <td>40.922326</td>
-                        <td>-72.637078</td>
+                       
                      
                         <td>
                           <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
                         </td>
                       </tr>
-                      <tr>
+                        <tr>
                         <td>00501</td>
                         <td>HOLTSVILLE</td>
                         <td>SUFFOLK</td>
                         <td>NY</td>
-                        <td>SUFFOLK</td>
-                        <td>40.922326</td>
-                        <td>-72.637078</td>
+                       
                      
                         <td>
                           <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
                         </td>
                       </tr>
-                      <tr>
+                        <tr>
                         <td>00501</td>
                         <td>HOLTSVILLE</td>
                         <td>SUFFOLK</td>
                         <td>NY</td>
-                        <td>SUFFOLK</td>
-                        <td>40.922326</td>
-                        <td>-72.637078</td>
+                       
                      
                         <td>
                           <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
                         </td>
                       </tr>
-                      <tr>
+                        <tr>
                         <td>00501</td>
                         <td>HOLTSVILLE</td>
                         <td>SUFFOLK</td>
                         <td>NY</td>
-                        <td>SUFFOLK</td>
-                        <td>40.922326</td>
-                        <td>-72.637078</td>
+                       
                      
                         <td>
                           <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
                         </td>
                       </tr>
-                      <tr>
+                       <tr>
                         <td>00501</td>
                         <td>HOLTSVILLE</td>
                         <td>SUFFOLK</td>
                         <td>NY</td>
-                        <td>SUFFOLK</td>
-                        <td>40.922326</td>
-                        <td>-72.637078</td>
+                       
                      
                         <td>
                           <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
                         </td>
                       </tr>
-                      <tr>
+                        <tr>
                         <td>00501</td>
                         <td>HOLTSVILLE</td>
                         <td>SUFFOLK</td>
                         <td>NY</td>
-                        <td>SUFFOLK</td>
-                        <td>40.922326</td>
-                        <td>-72.637078</td>
+                       
                      
                         <td>
                           <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
                         </td>
                       </tr>
-                      <tr>
+                        <tr>
                         <td>00501</td>
                         <td>HOLTSVILLE</td>
                         <td>SUFFOLK</td>
                         <td>NY</td>
-                        <td>SUFFOLK</td>
-                        <td>40.922326</td>
-                        <td>-72.637078</td>
+                       
                      
                         <td>
                           <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
                         </td>
                       </tr>
-                      <tr>
+                       <tr>
                         <td>00501</td>
                         <td>HOLTSVILLE</td>
                         <td>SUFFOLK</td>
                         <td>NY</td>
-                        <td>SUFFOLK</td>
-                        <td>40.922326</td>
-                        <td>-72.637078</td>
+                       
                      
                         <td>
                           <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
