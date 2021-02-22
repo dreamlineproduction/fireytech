@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,6 +14,10 @@
     <link rel="stylesheet" href="vendors/iconfonts/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
     <link rel="stylesheet" href="vendors/css/vendor.bundle.addons.css">
+    <link href="css/jquery-editable.css" rel="stylesheet">
+     <!-- x-editable (bootstrap version) -->
+     <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.6/bootstrap-editable/css/bootstrap-editable.css" rel="stylesheet"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.4.6/bootstrap-editable/js/bootstrap-editable.min.js"></script>
     <!-- endinject -->
     <!-- plugin css for this page -->
     <!-- End plugin css for this page -->
@@ -205,7 +210,7 @@
   <div class="tab-pane fade" id="pills-address" role="tabpanel">
   
 <div class="view-all-address mb-4 mt-4">
-<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModal">View All Address
+<button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#view-all-address">View All Address
                       <i class="mdi mdi-play-circle ml-1"></i>
                     </button>
 </div>
@@ -238,8 +243,8 @@
                     <div class="form-group">
                       <label for="exampleInputName1">One Line</label>
                       
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"  spellcheck="false" readonly>42, Adilate Street. Ny. 2558 </textarea>
-                      
+                      <textarea class="form-control" id="oneline" rows="5"  spellcheck="false" readonly>42, Adilate Street. Ny. 2558 </textarea>
+                      <button class="btn btn-info btn-clipboard" onclick="myFunction()"><i class="fa fa-copy"></i> Copy Address</button>
                     </div>
                     <div class="form-group">
                       <label for="exampleInputName1">Note</label>
@@ -255,7 +260,7 @@
                     </div>
                     <div class="form-group">
                      
-                      
+                    <button type="button" class="btn btn-outline-primary"><i class="fa fa-plus"></i> Add Address</button>
                     
                       
                     </div>
@@ -450,10 +455,11 @@
 
 
 
-                 
-
+                 <hr>
+<div class="text-right mt-4">
                         <button type="submit" class="btn btn-success mr-2">Submit</button>
                         <button class="btn btn-light">Cancel</button>
+                        </div>
                       </form>
                                                 </div>
                                             </div>
@@ -580,17 +586,65 @@
     </div>
     <!-- container-scroller -->
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="display: none;">
-                    <div class="modal-dialog modal-lg" role="document">
+    <div class="modal fade" id="view-all-address" tabindex="-1" role="dialog" aria-labelledby="view-all-addressLabel" aria-hidden="true" style="display: none;">
+                    <div class="modal-dialog modal-md" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <h5 class="modal-title" id="view-all-address">View All Address</h5>
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">×</span>
                           </button>
                         </div>
                         <div class="modal-body">
-                          <p>Modal body text goes here.</p>
+                        <div class="table-responsive">
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th>
+                            #
+                          </th>
+                          <th>
+                            Address
+                          </th>
+                          <th>
+                          Address 2
+                          </th>
+                          <th>
+                          Zip
+                          </th>
+                          <th>
+                          Note
+                          </th>
+                          <th>
+                          Attn
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            1
+                          </td>
+                          <td>
+                          <a href="#" id="username" data-type="text" data-placement="right" data-title="Enter username">superuser</a>
+                          </td>
+                          <td>
+                         
+                          </td>
+                          <td>
+                            75842
+                          </td>
+                          <td>
+                          This is note
+                          </td>
+                          <td>
+                          Attn Mr. Jhose
+                          </td>
+                        </tr>
+                    
+                      </tbody>
+                    </table>
+                  </div>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-success">Submit</button>
@@ -643,8 +697,58 @@
     <!-- endinject -->
     <!-- Custom js for this page-->
     <script src="js/dashboard.js"></script>
+    <!-- <script src="x/main.js"></script> -->
     <script src="js/data-table.js"></script>
+    <script src="js/js-grid.js"></script>
+
+   
+    
+    
+  <script>
+
+$(document).ready(function() {
+    //toggle `popup` / `inline` mode
+    $.fn.editable.defaults.mode = 'popup';     
+    
+    //make username editable
+    $('#username').editable();
+    
+    //make status editable
+    $('#status').editable({
+        type: 'select',
+        title: 'Select status',
+        placement: 'right',
+        value: 2,
+        source: [
+            {value: 1, text: 'status 1'},
+            {value: 2, text: 'status 2'},
+            {value: 3, text: 'status 3'}
+        ]
+        /*
+        //uncomment these lines to send data on server
+        ,pk: 1
+        ,url: '/post'
+        */
+    });
+});
+
+  </script>
+   
     <!-- End custom js for this page-->
+<script>
+function myFunction() {
+  var copyText = document.getElementById("oneline");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999)
+  document.execCommand("copy");
+  alert("Address Copied: " + copyText.value);
+}
+</script>
+
+
+
+
+
 </body>
 
 </html>

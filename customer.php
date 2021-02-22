@@ -1,3 +1,4 @@
+<?php include 'conn/connection.php';?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,56 +58,24 @@
 
                                             <div class="row">
                                                 <div class="col-12 table-responsive">
-                                                    <table id="order-listing" class="table">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>#</th>
-                                                                <th><?php echo $lang['actions']; ?></th>
-                                                                <th><?php echo $lang['company_name']; ?></th>
-                                                                <th><?php echo $lang['date_added']; ?></th>
-                                                                <th><?php echo $lang['date_last_edited']; ?></th>
-                                                                <th><?php echo $lang['client_type']; ?></th>
-                                                                <th><?php echo $lang['client_sub_type']; ?></th>
+                                                <table id="customer-list" class="table dataTable no-footer">
+    <thead>
+      <tr>
+          <th>#</th>
+          <th>Action</th>
+          <th>Company Name</th>
+          <th>Date Added</th>
+          <th>Date Last Edited</th>
+          <th>Client Type</th>
+          <th>Client Sub Type</th>
+          <th>Customer Source</th>
+      </tr>
+    </thead>
+  </table>
+                                               
 
-                                                               
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
 
-                                                            <tr>
-                                                                <td>1</td>
-                                                                <td>
-                                                                    <div class="dropdown">
-                                                                        <button type="button"
-                                                                            class="btn btn-dark icon-btn dropdown-toggle"
-                                                                            id="dropdownMenuIconButton7"
-                                                                            data-toggle="dropdown" aria-haspopup="true"
-                                                                            aria-expanded="false">
-                                                                            <i class="mdi mdi-account"></i>
-                                                                        </button>
-                                                                        <div class="dropdown-menu"
-                                                                            aria-labelledby="dropdownMenuIconButton7">
-                                                                            <a class="dropdown-item"
-                                                                                href="#"><?php echo $lang['view_customer']; ?></a>
-                                                                            <a class="dropdown-item"
-                                                                                href="#"><?php echo $lang['edit_customer']; ?></a>
-
-                                                                            <div class="dropdown-divider"></div>
-                                                                            <a class="dropdown-item text-danger"
-                                                                                href="#"><?php echo $lang['delete_customer']; ?></a>
-                                                                        </div>
-                                                                    </div>
-                                                                </td>
-                                                                <td>Dream Line Production</td>
-                                                                <td>01-02-2021</td>
-                                                                <td>05-02-2021</td>
-                                                                <td>Individual</td>
-                                                                <td>CUSTOMER SERVICE</td>
-
-                                                              
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
+                                                   
                                                 </div>
                                             </div>
                                         </div>
@@ -136,6 +105,7 @@
     <!-- container-scroller -->
 
     <!-- plugins:js -->
+
     <script src="vendors/js/vendor.bundle.base.js"></script>
     <script src="vendors/js/vendor.bundle.addons.js"></script>
     <!-- endinject -->
@@ -152,6 +122,32 @@
     <script src="js/dashboard.js"></script>
     <script src="js/data-table.js"></script>
     <!-- End custom js for this page-->
-</body>
+    <script type="text/javascript">
+  $(document).ready(function() {
+      $('#customer-list').dataTable({
+        "bProcessing": true,
+        "sAjaxSource": "ajax-request/customer-listing.php",
+        "aoColumns": [
+              { mData: 'CustomerNumber' },
+              {
+      "mData": null,
+      "bSortable": false,
+      "mRender": function(data, type, full) {
+        return '<a class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip"' + full[0] + '>' + 'Edit' + '</a>';
+      }
+    },
+              { mData: 'Company' },
+              { mData: 'DateAdded' },
+              { mData: 'DateEdited' },
+              { mData: 'CustomerType' },
+              { mData: 'ContactSubType' },
+              { mData: 'CustomerSource' }
+             
+            ]
+      });  
+  });
+</script>
 
+
+</body>
 </html>

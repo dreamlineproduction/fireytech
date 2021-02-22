@@ -1,3 +1,4 @@
+<?php include 'conn/connection.php';?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -53,7 +54,7 @@
                 <div class="col-sm-12 col-md-4 grid-margin stretch-card card-tile">
                   <div class="card">
                     <div class="card-body">
-                    <form class="forms-sample">
+                    <form class="forms-sample" action="ajax-request/all-zip-data.php" method="post">
                         <div class="form-group">
                           <label for="zip">ZIP</label>
                           <input type="number" class="form-control" id="zip-code" placeholder="Enter zip code">
@@ -72,7 +73,7 @@
                         </div>
                       
                       
-                        <button type="submit" class="btn btn-success mr-2">Submit</button>
+                        <button type="submit" value="Submit" class="btn btn-success mr-2">Submit</button>
                         <button class="btn btn-light">Cancel</button>
                       </form>
                       
@@ -84,174 +85,20 @@
                 <div class="col-sm-12 col-md-8 grid-margin stretch-card card-tile">
                   <div class="card">
                     <div class="card-body table-responsive">
-                   
-                  <table id="order-listing" class="table">
+                    <table id="all-zip" class="table dataTable no-footer">
+                 
                     <thead>
                       <tr>
                         <th>ZIP</th>
                         <th>CITY</th>
                         <th>COUNTY</th>
                         <th>STATE</th>
+                        <th>EDIT</th>
                         
-                        <th>ACTION</th>
+                  
                       </tr>
                     </thead>
-                    <tbody>
-                      <tr>
-                        <td>00501</td>
-                        <td>HOLTSVILLE</td>
-                        <td>SUFFOLK</td>
-                        <td>NY</td>
-                       
-                     
-                        <td>
-                          <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>00501</td>
-                        <td>HOLTSVILLE</td>
-                        <td>SUFFOLK</td>
-                        <td>NY</td>
-                        
-                     
-                        <td>
-                          <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>00501</td>
-                        <td>HOLTSVILLE</td>
-                        <td>SUFFOLK</td>
-                        <td>NY</td>
-                       
-                     
-                        <td>
-                          <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>00501</td>
-                        <td>HOLTSVILLE</td>
-                        <td>SUFFOLK</td>
-                        <td>NY</td>
-                       
-                     
-                        <td>
-                          <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>00501</td>
-                        <td>HOLTSVILLE</td>
-                        <td>SUFFOLK</td>
-                        <td>NY</td>
-                       
-                     
-                        <td>
-                          <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>00501</td>
-                        <td>HOLTSVILLE</td>
-                        <td>SUFFOLK</td>
-                        <td>NY</td>
-                       
-                     
-                        <td>
-                          <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>00501</td>
-                        <td>HOLTSVILLE</td>
-                        <td>SUFFOLK</td>
-                        <td>NY</td>
-                       
-                     
-                        <td>
-                          <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
-                        </td>
-                      </tr>
-                        <tr>
-                        <td>00501</td>
-                        <td>HOLTSVILLE</td>
-                        <td>SUFFOLK</td>
-                        <td>NY</td>
-                       
-                     
-                        <td>
-                          <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
-                        </td>
-                      </tr>
-                        <tr>
-                        <td>00501</td>
-                        <td>HOLTSVILLE</td>
-                        <td>SUFFOLK</td>
-                        <td>NY</td>
-                       
-                     
-                        <td>
-                          <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
-                        </td>
-                      </tr>
-                        <tr>
-                        <td>00501</td>
-                        <td>HOLTSVILLE</td>
-                        <td>SUFFOLK</td>
-                        <td>NY</td>
-                       
-                     
-                        <td>
-                          <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
-                        </td>
-                      </tr>
-                       <tr>
-                        <td>00501</td>
-                        <td>HOLTSVILLE</td>
-                        <td>SUFFOLK</td>
-                        <td>NY</td>
-                       
-                     
-                        <td>
-                          <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
-                        </td>
-                      </tr>
-                        <tr>
-                        <td>00501</td>
-                        <td>HOLTSVILLE</td>
-                        <td>SUFFOLK</td>
-                        <td>NY</td>
-                       
-                     
-                        <td>
-                          <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
-                        </td>
-                      </tr>
-                        <tr>
-                        <td>00501</td>
-                        <td>HOLTSVILLE</td>
-                        <td>SUFFOLK</td>
-                        <td>NY</td>
-                       
-                     
-                        <td>
-                          <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
-                        </td>
-                      </tr>
-                       <tr>
-                        <td>00501</td>
-                        <td>HOLTSVILLE</td>
-                        <td>SUFFOLK</td>
-                        <td>NY</td>
-                       
-                     
-                        <td>
-                          <button class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip">Edit</button>
-                        </td>
-                      </tr>
-                    </tbody>
+                  
                   </table>
                       
                    
@@ -269,6 +116,8 @@
         
       
         </div>
+     
+
         <!-- content-wrapper ends -->
         <!-- partial:partials/_footer.html -->
         <?php include 'partials/footer.php';?>
@@ -300,6 +149,28 @@
   <script src="js/select2.js"></script>
   <script src="js/data-table.js"></script>
   <!-- End custom js for this page-->
+  <script type="text/javascript">
+  $(document).ready(function() {
+      $('#all-zip').dataTable({
+        "bProcessing": true,
+        "sAjaxSource": "ajax-request/all-zip-data.php",
+        "aoColumns": [
+              { mData: 'Zip' },
+              { mData: 'City' },
+              { mData: 'REGION' },
+              { mData: 'State' },
+              {
+      "mData": null,
+      "bSortable": false,
+      "mRender": function(data, type, full) {
+        return '<a class="btn btn-outline-primary" data-toggle="modal" data-target="#edit-zip"' + full[0] + '>' + 'Edit' + '</a>';
+      }
+    }
+              
+            ]
+      });  
+  });
+</script>
 </body>
 
 </html>
